@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dulani Nawodya | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Dulani Nawodya, an Information Technology undergraduate at SLIIT focused on software development, IT support and cloud computing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a href="#home" class="logo" aria-label="Dulani Nawodya, home">Dulani<span class="logo__dot">.</span></a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <div class="nav__mobile-actions">
+          <a href="#contact" class="btn btn--primary btn--nav"><svg class="btn__icon" viewBox="0 0 24 24" width="20"
+              height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="7" width="18" height="13" rx="2.5" />
+              <path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 13h18" />
+            </svg>Hire Me</a>
+        </div>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--primary btn--nav"><svg class="btn__icon" viewBox="0 0 24 24" width="20"
+            height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="7" width="18" height="13" rx="2.5" />
+            <path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 13h18" />
+          </svg>Hire Me</a>
+      </div>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner container">
+        <div class="hero__text reveal">
+          <span class="name-tag">Dulani Nawodya</span>
+          <h1 class="hero__title">
+            <span class="sr-only">Dulani Nawodya, </span>I'm <span class="typed" id="typed"
+              data-words="IT Undergraduate|IT Support Enthusiast|Networking Learner|Cloud Learner">IT
+              Undergraduate</span><span class="caret" aria-hidden="true"></span>
+          </h1>
+          <h2 class="hero__subtitle">Information Technology Undergraduate</h2>
+          <p class="hero__intro">Passionate about technology, troubleshooting and building reliable IT solutions through
+            hands-on learning and continuous development.</p>
+          <p class="hero__open">Open to Internships</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary btn--lg">View My Work <svg class="btn__icon" viewBox="0 0 24 24"
+                width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg></a>
+            <a href="assets/Dulani Nawodya.pdf" class="btn btn--light btn--lg" download="Dulani Nawodya.pdf">Download CV
+              <svg class="btn__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
+                <path d="M14 3v5h5M9 13h6M9 17h6" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="hero__photo reveal">
+          <div class="photo-frame">
+            <img src="assets/profile.png" alt="Portrait of Dulani Nawodya" id="profile-img" width="900" height="900" />
+            <div class="photo-fallback" id="photo-fallback" aria-hidden="true">DN</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. ABOUT ME ============ -->
+    <section class="section section--white" id="about">
+      <div class="container about">
+        <div class="about__text reveal">
+          <h2 class="section-heading">ABOUT ME</h2>
+          <p>
+            I am an Information Technology 3rd Year undergraduate at the Sri Lanka Institute of
+            Information Technology (SLIIT), passionate about IT support, troubleshooting,
+            networking and cloud technologies. I enjoy diagnosing technical problems,
+            understanding how computer systems work and finding effective solutions. I am
+            continuously developing my practical skills in Windows, Linux, networking and cloud
+            technologies through hands-on learning and technical projects.
+          </p>
+          <p>
+            I am currently seeking an opportunity to begin my career in IT Support, Help Desk or
+            Technical Support.
+          </p>
+
+          <ul class="tags tags--about" aria-label="Focus areas">
+            <li>IT Support</li>
+            <li>Help Desk</li>
+            <li>Technical Troubleshooting</li>
+            <li>Networking</li>
+            <li>Cloud Computing</li>
+          </ul>
+        </div>
+
+        <aside class="about__side reveal">
+          <div class="stat-row">
+            <!-- Only verified figures are shown. Update these if you want different numbers. -->
+            <div class="stat-card">
+              <strong data-count="3">3</strong>
+              <span>Featured Projects</span>
+            </div>
+            <div class="stat-card">
+              <strong>SLIIT</strong>
+              <span>IT Undergraduate</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ WHAT I DO ============ -->
+    <section class="section section--dark" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="section-heading">MY SERVICES</h2>
+          </div>
+          <p class="section-head__note">The areas I am building my skills in.</p>
+        </div>
+        <div class="services">
+          <article class="svc reveal">
+            <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="12" rx="2" />
+                <path d="M8 20h8M12 16v4" />
+              </svg></span>
+            <h3>IT Support &amp; Help Desk</h3>
+            <p>Hardware and software troubleshooting, Windows and Linux fundamentals, and basic command-line problem
+              solving.</p>
+            <a href="#projects" class="svc__link">See related work &rarr;</a>
+          </article>
+          <article class="svc reveal">
+            <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="5" r="2.5" />
+                <circle cx="5" cy="19" r="2.5" />
+                <circle cx="19" cy="19" r="2.5" />
+                <path d="M12 7.5v4M12 11.5l-5.5 5M12 11.5l5.5 5" />
+              </svg></span>
+            <h3>Networking</h3>
+            <p>Networking fundamentals including TCP/IP, DNS and DHCP, with a focus on understanding how systems
+              connect.</p>
+            <a href="#skills" class="svc__link">See my skills &rarr;</a>
+          </article>
+          <article class="svc reveal">
+            <span class="svc__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 8.5a4 4 0 0 1-.5 9.5H7z" />
+              </svg></span>
+            <h3>Cloud Computing</h3>
+            <p>AWS fundamentals, backed by the AWS Cloud Practitioner Essentials course completion certificate.</p>
+            <a href="#education" class="svc__link">See certificate &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. FEATURED PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="section-heading">FEATURED WORK</h2>
+          </div>
+          <p class="section-head__note">A selection of my recent projects.</p>
+        </div>
+
+        <div class="grid">
+
+
+          <!-- Card 1 -->
+          <article class="card card--lavender reveal">
+            <span class="chip">Project</span>
+            <h3 class="card__title">IT Helpdesk Ticket System</h3>
+            <button class="card__details" type="button" aria-expanded="false" data-details="d1">View Details</button>
+            <div class="card__more" id="d1" hidden>
+              <p>A web application for managing pharmacy operations, including medicine inventory, prescriptions,
+                patient records, payments, and loyalty rewards. It provides role-based dashboards for administrators,
+                pharmacists, inventory staff, and cashiers.
+              <p>Built with: Java, Spring Boot, JSP, Maven, and Microsoft SQL Server.</p>
+              <div class="card__gallery" aria-label="Project screenshots"><img src="assets/help-desk.png"
+                  alt="IT Helpdesk Ticket System screenshot 1" loading="lazy" /><img src="assets/helpdesk-2.png"
+                  alt="IT Helpdesk Ticket System screenshot 2" loading="lazy" /></div>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/dulani29/IT-Helpdesk-Ticket-System.git" class="btn btn--dark btn--sm"
+                aria-label="View on GitHub" data-todo-link target="_blank" rel="noopener noreferrer"><svg
+                  viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg><span class="gh-label">GitHub</span></a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card card--mint reveal">
+            <span class="chip">Project</span>
+            <h3 class="card__title">Restaurant Management System</h3>
+            <button class="card__details" type="button" aria-expanded="false" data-details="d2">View Details</button>
+            <div class="card__more" id="d2" hidden>
+              <p>A lightweight, web‑based ticketing system designed for internal IT support teams. It provides a simple
+                interface for users to submit support requests, tracks ticket status, and enables administrators to
+                manage, prioritize, and resolve issues efficiently.</p>
+              <div class="card__gallery" aria-label="Project screenshots"><img src="assets/restaurant.png"
+                  alt="Restaurant Management System screenshot 1" loading="lazy" /></div>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/dulani29/Restaurant-Management" class="btn btn--dark btn--sm"
+                aria-label="View on GitHub" data-todo-link target="_blank" rel="noopener noreferrer"><svg
+                  viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg><span class="gh-label">GitHub</span></a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card card--lavender reveal">
+            <span class="chip">Project</span>
+            <h3 class="card__title">Pharmacy Management Web System</h3>
+            <button class="card__details" type="button" aria-expanded="false" data-details="d3">View Details</button>
+            <div class="card__more" id="d3" hidden>
+              <p>A web-based application designed to streamline pharmacy operations by managing medicines, inventory,
+                prescriptions, patient information, payments, and customer loyalty programs.
+              </p>
+              <div class="card__gallery" aria-label="Project screenshots"><img src="assets/pharmacy.png"
+                  alt="Pharmacy Management Web System screenshot 1" loading="lazy" /></div>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/dulani29/Pharmacy-Management.git" class="btn btn--dark btn--sm"
+                aria-label="View on GitHub" data-todo-link target="_blank" rel="noopener noreferrer"><svg
+                  viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg><span class="gh-label">GitHub</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ 4. TECHNICAL SKILLS ============ -->
+    <section class="section section--white" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="section-heading">TECHNICAL SKILLS</h2>
+          </div>
+          <p class="section-head__note">The tools and areas I work with and am continuing to develop.</p>
+        </div>
+
+        <div class="skills-carousel reveal">
+          <button class="sk-arrow sk-arrow--prev" type="button" aria-label="Previous skills" data-dir="-1"><svg
+              viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 5l-7 7 7 7" />
+            </svg></button>
+          <div class="skills-track" id="skills-track" tabindex="0" role="list" aria-label="Technical skills">
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="8" width="38" height="26" rx="3" />
+                <path d="M17 42h14M24 34v8" />
+                <path d="M12 16h10v8H12z" />
+                <path d="M26 17h10M26 24h10" />
+              </svg>
+              <h3>Windows &amp; Linux</h3>
+              <p>WINDOWS AND LINUX FUNDAMENTALS</p>
+            </article>
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M30 8a10 10 0 0 0-9 14L8 35a4 4 0 0 0 5 5l13-13a10 10 0 0 0 14-9l-6 6-5-1-1-5 6-6a10 10 0 0 0-4-4z" />
+              </svg>
+              <h3>Troubleshooting</h3>
+              <p>HARDWARE AND SOFTWARE TROUBLESHOOTING</p>
+            </article>
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 14 8 24l10 10" />
+                <path d="M30 14l10 10-10 10" />
+                <path d="M27 10l-6 28" />
+              </svg>
+              <h3>Programming</h3>
+              <p>JAVA | JAVASCRIPT | SQL</p>
+            </article>
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="8" width="38" height="26" rx="3" />
+                <path d="M17 42h14M24 34v8" />
+                <path d="M20 16l-5 5 5 5M28 16l5 5-5 5" />
+              </svg>
+              <h3>Web Development</h3>
+              <p>HTML | CSS | JAVASCRIPT | NODE.JS</p>
+            </article>
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="24" cy="11" rx="14" ry="5" />
+                <path d="M10 11v13c0 2.8 6.3 5 14 5s14-2.2 14-5V11" />
+                <path d="M10 24v13c0 2.8 6.3 5 14 5s14-2.2 14-5V24" />
+              </svg>
+              <h3>Databases</h3>
+              <p>SQL</p>
+            </article>
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 36a8 8 0 0 1-1-15.9A11 11 0 0 1 34 17a9 9 0 0 1 1 19H14z" />
+              </svg>
+              <h3>Cloud Computing</h3>
+              <p>AWS FUNDAMENTALS</p>
+            </article>
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="19" y="6" width="10" height="9" rx="2" />
+                <rect x="5" y="33" width="10" height="9" rx="2" />
+                <rect x="33" y="33" width="10" height="9" rx="2" />
+                <path d="M24 15v9M10 33v-9h28v9" />
+              </svg>
+              <h3>Networking Fundamentals</h3>
+              <p>TCP/IP | DNS | DHCP</p>
+            </article>
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="8" width="38" height="32" rx="3" />
+                <path d="M13 19l7 6-7 6" />
+                <path d="M24 32h11" />
+              </svg>
+              <h3>Command Line</h3>
+              <p>BASIC COMMAND-LINE TROUBLESHOOTING</p>
+            </article>
+            <article class="sk-card" role="listitem">
+              <svg class="sk-card__icon" viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 28v-6a14 14 0 0 1 28 0v6" />
+                <rect x="7" y="26" width="7" height="11" rx="3" />
+                <rect x="34" y="26" width="7" height="11" rx="3" />
+                <path d="M38 37c0 4-4 6-10 6h-2" />
+              </svg>
+              <h3>IT Support &amp; Help Desk</h3>
+              <p>IT SUPPORT | HELP DESK | TROUBLESHOOTING</p>
+            </article>
+          </div>
+          <button class="sk-arrow sk-arrow--next" type="button" aria-label="Next skills" data-dir="1"><svg
+              viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 5l7 7-7 7" />
+            </svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. EDUCATION & CERTIFICATIONS ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="section-heading">EDUCATION &amp; CERTIFICATIONS</h2>
+          </div>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu-card edu-card--blue reveal">
+            <span class="chip">Education</span>
+            <h3>Information Technology Undergraduate</h3>
+            <p class="edu-card__org">Sri Lanka Institute of Information Technology (SLIIT)</p>
+            <p>Currently studying as an Information Technology undergraduate.</p>
+          </article>
+
+          <article class="edu-card edu-card--lavender cert reveal">
+            <span class="chip">Course Completion Certificate</span>
+            <h3>AWS Cloud Practitioner Essentials</h3>
+            <p class="edu-card__org">AWS Training &amp; Certification</p>
+            <p>Completed on November 14, 2026.</p>
+            <a href="assets/aws-cloud-practitioner-essentials-certificate.pdf"
+              class="btn btn--primary btn--sm edu-card__btn" target="_blank" rel="noopener noreferrer">View
+              Certificate</a>
+          </article>
+
+          <article class="edu-card edu-card--blue reveal">
+            <span class="chip">Digital Credentials</span>
+            <h3>Credly – Verified Achievements</h3>
+            <p class="edu-card__org">Credly</p>
+            <p>View my verified digital badges and professional certifications.</p>
+
+            <a href="https://www.credly.com/users/dulani-nawodya" class="btn btn--primary btn--sm edu-card__btn"
+              target="_blank" rel="noopener noreferrer">
+              View Credly Profile
+            </a>
+          </article>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 6 & 7. CONTACT + FOOTER ============ -->
+  <footer class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__text">
+          <h2 class="contact__title">DULANI NAWODYA</h2>
+          <p>Seeking internship opportunities in IT support, help desk, software development and cloud computing. Let's
+            connect!</p>
+          <p class="contact__email"><svg class="mail-icon" viewBox="0 0 24 24" width="20" height="20" fill="none"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2.5" />
+              <path d="M3 7l9 6 9-6" />
+            </svg> <a href="mailto:dulaninawodya29@gmail.com">dulaninawodya29@gmail.com</a></p>
+        </div>
+        <div class="contact__actions">
+          <a href="assets/Dulani Nawodya.pdf" class="btn btn--light" download="Dulani Nawodya.pdf">Download CV <svg
+              class="btn__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
+              <path d="M14 3v5h5M9 13h6M9 17h6" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>&copy; <span id="year">2026</span> Dulani Nawodya. All rights reserved.</p>
+        <a href="#top" class="footer-bar__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
