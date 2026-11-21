@@ -207,3 +207,41 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
+
+
+/* Eduflow screenshot slider */
+(() => {
+  const slider = document.getElementById("eduflow-slider");
+
+  if (!slider) return;
+
+  const image = slider.querySelector(".project-slider__image");
+  const counter = document.getElementById("eduflow-counter");
+
+  const screenshots = [
+    "assets/eduflow/screen1.png",
+    "assets/eduflow/screen2.png",
+    "assets/eduflow/screen3.png",
+    "assets/eduflow/screen4.png",
+    "assets/eduflow/screen5.png",
+    "assets/eduflow/screen6.png",
+    "assets/eduflow/screen7.png"
+  ];
+
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    currentSlide = (index + screenshots.length) % screenshots.length;
+
+    image.src = screenshots[currentSlide];
+    image.alt = `Eduflow screenshot ${currentSlide + 1} of ${screenshots.length}`;
+    counter.textContent = `${currentSlide + 1} / ${screenshots.length}`;
+  }
+
+  slider.querySelectorAll(".slider-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      const direction = Number(button.dataset.direction);
+      showSlide(currentSlide + direction);
+    });
+  });
+})();

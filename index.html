@@ -128,7 +128,7 @@
           <div class="stat-row">
             <!-- Only verified figures are shown. Update these if you want different numbers. -->
             <div class="stat-card">
-              <strong data-count="3">3</strong>
+              <strong data-count="3">5</strong>
               <span>Featured Projects</span>
             </div>
             <div class="stat-card">
@@ -276,8 +276,8 @@
           <article class="card card--lavender reveal">
             <span class="chip">Project</span>
             <h3 class="card__title">Pharmacy Management Web System</h3>
-            <button class="card__details" type="button" aria-expanded="false" data-details="d3">View Details</button>
-            <div class="card__more" id="d3" hidden>
+            <button class="card__details" type="button" aria-expanded="false" data-details="d4">View Details</button>
+            <div class="card__more" id="d4" hidden>
               <p>A web-based application designed to streamline pharmacy operations by managing medicines, inventory,
                 prescriptions, patient information, payments, and customer loyalty programs.
               </p>
@@ -293,6 +293,58 @@
                 </svg><span class="gh-label">GitHub</span></a>
             </div>
           </article>
+
+
+          <!-- Eduflow Project Card -->
+          <article class="card card--mint reveal">
+            <span class="chip">Full-Stack Project</span>
+            <h3 class="card__title">Eduflow – O/L Exam Preparation Platform</h3>
+
+            <button class="card__details" type="button" aria-expanded="false" data-details="eduflow-details">
+              View Details
+            </button>
+
+            <div class="card__more" id="eduflow-details" hidden>
+              <p>
+                Eduflow is an online O/L exam preparation platform designed
+                to support students in their learning journey. It provides
+                features for students, teachers and administrators to support
+                learning activities and platform management.
+              </p>
+
+              <p>Built as a full-stack application with separate frontend and backend components.</p>
+
+              <!-- Screenshot slideshow -->
+              <div class="project-slider" id="eduflow-slider">
+                <div class="project-slider__viewport">
+                  <img class="project-slider__image" src="assets/eduflow/screen1.png" alt="Eduflow screenshot 1 of 7"
+                    loading="lazy" />
+                </div>
+
+                <div class="project-slider__controls">
+                  <button type="button" class="slider-btn" data-slider="eduflow" data-direction="-1"
+                    aria-label="Previous screenshot">
+                    &#10094;
+                  </button>
+
+                  <span class="slider-counter" id="eduflow-counter">1 / 7</span>
+
+                  <button type="button" class="slider-btn" data-slider="eduflow" data-direction="1"
+                    aria-label="Next screenshot">
+                    &#10095;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__actions">
+              <a href="YOUR-EDUFLOW-GITHUB-REPOSITORY-URL" class="btn btn--dark btn--sm" target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+              </a>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
